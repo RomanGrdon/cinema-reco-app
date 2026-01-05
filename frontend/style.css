@@ -1,0 +1,111 @@
+/* frontend/style.css */
+:root{
+  --bg: #0b0f19;
+  --card: rgba(164, 159, 169, 0.06);
+  --text: #e9eefc;
+  --muted: rgba(233,238,252,0.7);
+  --border: rgba(255,255,255,0.12);
+  --accent: #2e084d;
+}
+
+.page{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--text);
+}
+
+.hero{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      700px 260px at 50% 50%,   /* Pour centré l'effet*/
+      rgba(254, 197, 65, 0.25),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(34, 21, 1),
+      transparent 100%
+    );
+
+  margin-bottom: 16px;
+}
+
+
+.hero h1{
+  margin: 6px 0 4px 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hero p{
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 520px;  /* évite une ligne trop longue */
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th, .table td{
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th{
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+}
+
+.stApp { /* ici c'est le fond de toute la page */
+    background-image:
+        linear-gradient( /* on met un filtre sombre par dessus l'image */
+            rgba(0, 0, 0, 0.40),
+            rgba(0, 0, 0, 0.40)
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+
+    background-size: cover;   /* pour couvrir tout le fond */
+    background-position: center;
+    background-repeat: no-repeat; /* on veut pas de mosaique */
+    background-attachment: fixed; /* l'image ne bouge pas quand on scroll */
+}
+
+
+/* Je veux afficher 2 ou 3 film par carte */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+    gap: 32px;
+    justify-items: center;
+    margin-top: 24px;
+}
+
+
+.card {
+    box-sizing: border-box;
+    width: 380px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    background: var(--card);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centre image + texte */
+    text-align: center;    /* centre titre + durée */
+}
+
