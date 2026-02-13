@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🎬 Cinema Recommendation App
 
 🔗 **Code source :** https://github.com/RomanGrdon/cinema-reco-app  
