@@ -2,7 +2,7 @@
 # 🎬 Cinema Recommendation App
 
 🔗 **Code source :** https://github.com/RomanGrdon/cinema-reco-app  
-🌐 **Démo en ligne :** https://cinema-reco-app.streamlit.app  
+🌐 **Démo en ligne :** https://cinema-reco-app-y9tmapvt77u243lrzjztge.streamlit.app/
 
 ---
 
